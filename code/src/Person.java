@@ -9,10 +9,11 @@ public class Person {
     private int age;
     private String name;
     private Eye eye;
+    private static String hair;
 
     // Constructor
 
-    public Person() { }
+    public Person() {}
 
     // Methods
 
@@ -20,8 +21,12 @@ public class Person {
         this.age = newAge;
     }
 
-    public int getAge() {
-        return age;
+//    public int getAge() {
+//        return age;
+//    }
+
+    public boolean isAdult() {
+        return age >= 18;
     }
 
     public void setName(String newName) {
@@ -38,6 +43,14 @@ public class Person {
 
     public Eye getEye() {
         return eye;
+    }
+
+    public static void setHair(String newHair) {
+        hair = newHair;
+    }
+
+    public String getHair() {
+        return hair;
     }
 
 }
