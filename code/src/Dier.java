@@ -15,4 +15,14 @@ public class Dier {
     public boolean isCarnivoor() {
         return isCarnivoor;
     }
+
+    @Override
+    public String toString() {
+        return "Dit dier is een carnivoor: " + isCarnivoor;
+    }
+
+    @Override
+    public int hashCode() {
+        return 123;
+    }
 }

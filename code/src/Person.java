@@ -13,7 +13,11 @@ public class Person {
 
     // Constructor
 
-    public Person() {}
+    public Person() {
+        Voetbal bal = new Voetbal();
+        bal.setZwarteVlakken(7);
+        System.out.println(bal.getZwarteVlakken());
+    }
 
     // Methods
 
@@ -51,6 +55,20 @@ public class Person {
 
     public String getHair() {
         return hair;
+    }
+
+
+
+    class Voetbal {
+        private int zwarteVlakken;
+
+        public void setZwarteVlakken(int aantalZwarteVlakken) {
+            this.zwarteVlakken = aantalZwarteVlakken;
+        }
+
+        public int getZwarteVlakken() {
+            return zwarteVlakken;
+        }
     }
 
 }
